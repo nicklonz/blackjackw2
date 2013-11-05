@@ -1,0 +1,17 @@
+Write out the requirements of the blackjack game, and extract the major nouns. Use those nouns to then think about abstracting behaviors into Classes. Just use a pen or text editor for this exercise; no coding yet.
+
+this was my list:
+cards*
+suits
+deck*
+player*
+dealer*
+win
+lose
+hit
+stay
+blackjack
+bust
+tie
+
+* I had these correct, plus I forgot 'Hand'
