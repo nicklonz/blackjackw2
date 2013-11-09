@@ -1,0 +1,34 @@
+
+1.    Name what each of the below is:
+
+    a = 1 # => ex. a is a local variable, and is a Fixnum object with value 1
+
+    @a = 2 ===>instance variable
+    user = User.new ===> user class method new
+    user.name
+    user.name = "Joe"
+
+2.    How does a class mix in a module?
+
+Ruby Modules are similar to classes in that they hold a collection of methods, constants, and other module and class definitions. Modules are defined much like classes are, but the module keyword is used in place of the class keyword
+        
+3.  What's the difference between class variables and instance variables?
+
+Class variables use the @@ to denote the variable as class level.  An instance variable has a name beginning with @, and its scope is confined to whatever object self refers to. Two different objects, even if they belong to the same class, are allowed to have different values for their instance variables.
+
+
+4.   What does attr_accessor do? attr_accessor is shorthand to define getters and setters.
+
+5.  How would you describe this expression: Dog.some_method
+
+===> class method
+
+6.    In Ruby, what's the difference between subclassing and mixing in modules? 
+
+A class can be defined repeatedly. Each definition is added to the last definition. If a method is redefined, the former one is overridden and lost. 
+
+7.    Given that I can instantiate a user like this: User.new('Bob'), what would the initialize method look like for the User class? ===> Class Bob
+
+8.    Can you call instance methods of the same class from other instance methods in that class? If a method is redefined, the former one is overridden and lost.  
+
+9. When you get stuck, what's the process you use to try to trap the error? Use Pry Gem
