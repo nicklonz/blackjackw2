@@ -1,5 +1,5 @@
 # Tealeaf Week 2
-# Object Oriented Blackjack Game
+# Object Oriented Blackjack Game Phase 2
 # By NPL
 
 require 'rubygems'
