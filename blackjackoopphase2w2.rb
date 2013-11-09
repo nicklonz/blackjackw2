@@ -5,6 +5,9 @@
 require 'rubygems'
 require 'pry'
 
+# Methods are treated as Behaviors
+# Instance Variables are treated as States
+
 # Identify the Class
 class	Card
 	attr_accessor :suit, :face_value
@@ -65,4 +68,4 @@ end
 
 deck=Deck.new
 
-puts "I like it!"
+# puts "I like it!"
