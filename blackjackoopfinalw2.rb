@@ -27,7 +27,7 @@ class Card
   # Add Methods in the class
 
   def pretty_output
-    "The #{face_value} of #{find_suit}"
+    "the #{face_value} of #{find_suit}."
   end
 
 # Make a string
@@ -78,9 +78,9 @@ module Hand
   def show_hand
     puts "---- #{name}'s Hand ----"
     cards.each do|card|
-      puts "=> #{card}"
+      puts "The card is #{card}"
     end
-    puts "#{name} total is #{total}"
+    puts "#{name}'s total is #{total}"
   end
 
   def total
@@ -143,13 +143,15 @@ class Dealer
 
   def show_flop
     puts "---- Dealer's Hand ----"
-    puts "=> First card is hidden"
-    puts "=> Second card is #{cards[1]}"
+    puts "The first card is #{cards[1]}."
+    puts "The second card is hidden."
   end
 end
 
 class Blackjack
   attr_accessor :deck, :player, :dealer
+
+# Fixed amounts placed in one area
 
   BLACKJACK_AMOUNT = 21
   DEALER_HIT_MIN = 17
@@ -182,12 +184,12 @@ class Blackjack
       if player_or_dealer.is_a?(Dealer)
         puts "Sorry, dealer hit blackjack. #{player.name} loses."
       else
-        puts "Congratulations, you hit blackjack! #{player.name} win!"
+        puts "Congratulations, you hit blackjack! #{player.name} wins!"
       end
       play_again?
     elsif player_or_dealer.is_busted?
       if player_or_dealer.is_a?(Dealer)
-        puts "Congratulations, dealer busted. #{player.name} win!"
+        puts "Congratulations, dealer busted. #{player.name} wins!"
       else
         puts "Sorry, #{player.name} busted. #{player.name} loses."
       end
